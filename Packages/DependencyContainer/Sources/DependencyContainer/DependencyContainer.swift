@@ -4,16 +4,7 @@
 import Foundation
 
 public typealias Closure = () -> Void
-
-public enum DependencyContainerRegistrationType {
-    case singleInstance(AnyObject?)
-    case closureBased(Closure?)
-}
-
-public enum DependencyContainerResolvingType {
-    case singleInstance
-    case closureBased
-}
+public typealias DC = DependencyContainer
 
 public final class DependencyContainer {
     public let shared = DependencyContainer()
