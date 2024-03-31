@@ -1,6 +1,8 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
+import Foundation
+
 public typealias Closure = () -> Void
 
 public enum DependencyContainerRegistrationType {
@@ -19,6 +21,11 @@ public final class DependencyContainer {
     private var singleInstanceDependencies: [ObjectIdentifier: AnyObject] = [:]
     private var closureBasesDependencies: [ObjectIdentifier: () -> Any] = [:]
 
+    private let dependencyAccessQueue = DispatchQueue(
+        label: Config.packageIdentifier + ".access.queue",
+        attributes: .concurrent
+    )
+
     private init() {
 
     }
@@ -27,14 +34,16 @@ public final class DependencyContainer {
         type: DependencyContainerRegistrationType,
         for interface: Any.Type
     ) {
-        let objectIdentifier = ObjectIdentifier(interface)
+        dependencyAccessQueue.sync(flags: .barrier) {
+            let objectIdentifier = ObjectIdentifier(interface)
 
-        switch type {
-        case let .singleInstance(instance):
-            singleInstanceDependencies[objectIdentifier] = instance
+            switch type {
+            case let .singleInstance(instance):
+                singleInstanceDependencies[objectIdentifier] = instance
 
-        case let .closureBased(closure):
-            closureBasesDependencies[objectIdentifier] = closure
+            case let .closureBased(closure):
+                closureBasesDependencies[objectIdentifier] = closure
+            }
         }
     }
 
@@ -42,25 +51,31 @@ public final class DependencyContainer {
         type: DependencyContainerResolvingType,
         for interface: Value.Type
     ) -> Value {
-        let objectIdentifier = ObjectIdentifier(interface)
+        var value: Value!
 
-        switch type {
-        case .singleInstance:
-            guard 
-                let singleInstanceDependency = singleInstanceDependencies[objectIdentifier] as? Value else {
-                fatalError("Could not retrieve a dependency for type: \(interface)")
+        dependencyAccessQueue.sync {
+            let objectIdentifier = ObjectIdentifier(interface)
+
+            switch type {
+            case .singleInstance:
+                guard
+                    let singleInstanceDependency = singleInstanceDependencies[objectIdentifier] as? Value else {
+                    fatalError("Could not retrieve a dependency for type: \(interface)")
+                }
+
+                value = singleInstanceDependency
+
+            case .closureBased:
+                guard
+                    let closure = closureBasesDependencies[objectIdentifier],
+                    let closureBasesDependencies = closure as? Value else {
+                    fatalError("Could not retrieve closure based dependency for type: \(interface)")
+                }
+
+                value = closureBasesDependencies
             }
-
-            return singleInstanceDependency
-
-        case .closureBased:
-            guard
-                let closure = closureBasesDependencies[objectIdentifier],
-                let closureBasesDependencies = closure as? Value else {
-                fatalError("Could not retrieve closure based dependency for type: \(interface)")
-            }
-
-            return closureBasesDependencies
         }
+
+        return value
     }
 }
