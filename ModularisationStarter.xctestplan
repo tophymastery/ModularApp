@@ -17,7 +17,6 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:ModularisationStarter.xcodeproj",
         "identifier" : "FBA9D0A22B7CD3B100FDF616",

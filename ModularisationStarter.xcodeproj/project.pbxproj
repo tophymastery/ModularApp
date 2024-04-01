@@ -12,6 +12,7 @@
 		011959B52BBAEE2100B7E8C3 /* AppDependencyConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011959B42BBAEE2100B7E8C3 /* AppDependencyConfigure.swift */; };
 		011959B82BBAF9A600B7E8C3 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 011959B72BBAF9A600B7E8C3 /* Analytics */; };
 		011959BB2BBAFCC000B7E8C3 /* CommonModels in Frameworks */ = {isa = PBXBuildFile; productRef = 011959BA2BBAFCC000B7E8C3 /* CommonModels */; };
+		011959BE2BBAFE9D00B7E8C3 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 011959BD2BBAFE9D00B7E8C3 /* Utilities */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -30,7 +31,6 @@
 		FBA9D08E2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D08D2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift */; };
 		FBA9D0902B7BD1F800FDF616 /* ArtistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D08F2B7BD1F800FDF616 /* ArtistService.swift */; };
 		FBA9D0982B7CD20A00FDF616 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D09A2B7CD20A00FDF616 /* Localizable.strings */; };
-		FBA9D09E2B7CD25300FDF616 /* String+localised.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D09D2B7CD25300FDF616 /* String+localised.swift */; };
 		FBA9D0AF2B7CD3D200FDF616 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0AE2B7CD3D200FDF616 /* HomeViewModelTests.swift */; };
 		FBA9D0B12B7CD6A200FDF616 /* HomeServiceTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0B02B7CD6A200FDF616 /* HomeServiceTestMock.swift */; };
 		FBA9D0B42B7CF52C00FDF616 /* SongDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0B32B7CF52C00FDF616 /* SongDetailsViewModelTests.swift */; };
@@ -55,6 +55,7 @@
 		011959B42BBAEE2100B7E8C3 /* AppDependencyConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyConfigure.swift; sourceTree = "<group>"; };
 		011959B62BBAF97900B7E8C3 /* Analytics */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Analytics; sourceTree = "<group>"; };
 		011959B92BBAFCB600B7E8C3 /* CommonModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonModels; sourceTree = "<group>"; };
+		011959BC2BBAFE9400B7E8C3 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utilities; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		FBA9D08F2B7BD1F800FDF616 /* ArtistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistService.swift; sourceTree = "<group>"; };
 		FBA9D0992B7CD20A00FDF616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FBA9D09B2B7CD21300FDF616 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FBA9D09D2B7CD25300FDF616 /* String+localised.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localised.swift"; sourceTree = "<group>"; };
 		FBA9D0A32B7CD3B100FDF616 /* ModularisationStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularisationStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D0AE2B7CD3D200FDF616 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		FBA9D0B02B7CD6A200FDF616 /* HomeServiceTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTestMock.swift; sourceTree = "<group>"; };
@@ -95,6 +95,7 @@
 				011959B82BBAF9A600B7E8C3 /* Analytics in Frameworks */,
 				011959BB2BBAFCC000B7E8C3 /* CommonModels in Frameworks */,
 				011959B12BBAED2400B7E8C3 /* AnalyticInterface in Frameworks */,
+				011959BE2BBAFE9D00B7E8C3 /* Utilities in Frameworks */,
 				011959B32BBAED2C00B7E8C3 /* DependencyContainer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +113,7 @@
 		0102F9AA2BB9A16B00A57BAD /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				011959BC2BBAFE9400B7E8C3 /* Utilities */,
 				011959B92BBAFCB600B7E8C3 /* CommonModels */,
 				011959A62BBAEB8000B7E8C3 /* Analytics */,
 				0102F9AB2BB9A3F200A57BAD /* DependencyContainer */,
@@ -159,7 +161,6 @@
 		FBA9D05D2B7B936A00FDF616 /* ModularisationStarter */ = {
 			isa = PBXGroup;
 			children = (
-				FBA9D09C2B7CD24700FDF616 /* Utilities */,
 				FBA9D0952B7CD1D400FDF616 /* Localisation */,
 				FBA9D0912B7CC45C00FDF616 /* Common */,
 				FBA9D0722B7B94BC00FDF616 /* Modules */,
@@ -241,14 +242,6 @@
 			path = Localisation;
 			sourceTree = "<group>";
 		};
-		FBA9D09C2B7CD24700FDF616 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				FBA9D09D2B7CD25300FDF616 /* String+localised.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		FBA9D0A42B7CD3B100FDF616 /* ModularisationStarterTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +315,7 @@
 				011959B22BBAED2C00B7E8C3 /* DependencyContainer */,
 				011959B72BBAF9A600B7E8C3 /* Analytics */,
 				011959BA2BBAFCC000B7E8C3 /* CommonModels */,
+				011959BD2BBAFE9D00B7E8C3 /* Utilities */,
 			);
 			productName = ModularisationStarter;
 			productReference = FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */;
@@ -416,7 +410,6 @@
 				FBA9D08E2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift in Sources */,
 				FBA9D07A2B7B95D400FDF616 /* HomeCoordinator.swift in Sources */,
 				FBA9D0832B7BCA4800FDF616 /* SongDetailsView.swift in Sources */,
-				FBA9D09E2B7CD25300FDF616 /* String+localised.swift in Sources */,
 				FBA9D08A2B7BD00A00FDF616 /* ArtistDetailsView.swift in Sources */,
 				FBA9D0902B7BD1F800FDF616 /* ArtistService.swift in Sources */,
 				011959B52BBAEE2100B7E8C3 /* AppDependencyConfigure.swift in Sources */,
@@ -730,6 +723,10 @@
 		011959BA2BBAFCC000B7E8C3 /* CommonModels */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CommonModels;
+		};
+		011959BD2BBAFE9D00B7E8C3 /* Utilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utilities;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
