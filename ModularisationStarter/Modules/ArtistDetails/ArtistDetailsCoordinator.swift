@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AnalyticInterface
+import DependencyContainer
 
 final class ArtistDetailsCoordinator {
 
@@ -16,10 +18,12 @@ final class ArtistDetailsCoordinator {
     }
 
     func makeViewController(artistIdentifier: String) -> UIViewController {
+        let analyticTracker = DC.shared.resolve(type: .singleInstance, for: AnalyticsEventTracking.self)
+
         let view = ArtistDetailsView(
             viewModel: .init(
                 artistService: ArtistService(),
-                analyticsTracker: AnalyticsEventTracker.shared,
+                analyticsTracker: analyticTracker,
                 artistIdentifier: artistIdentifier,
                 onSongSelected: pushSongDetail(_:)
             )

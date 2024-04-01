@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import AnalyticInterface
 @testable import ModularisationStarter
 
 final class ArtistDetailsViewModelTests: XCTestCase {

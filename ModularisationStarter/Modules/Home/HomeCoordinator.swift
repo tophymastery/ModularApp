@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AnalyticInterface
+import DependencyContainer
 
 final class HomeCoordinator {
 
@@ -16,9 +18,11 @@ final class HomeCoordinator {
     }()
 
     func makeViewController() -> UIViewController {
+        let analyticTracker = DC.shared.resolve(type: .singleInstance, for: AnalyticsEventTracking.self)
+        
         let viewModel = HomeViewModel(
             homeService: HomeService(),
-            analyticsTracker: AnalyticsEventTracker.shared,
+            analyticsTracker: analyticTracker,
             onSongSelected: pushSongDetail
         )
 

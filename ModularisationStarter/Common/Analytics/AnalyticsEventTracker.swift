@@ -10,11 +10,7 @@ import AnalyticInterface
 
 final class AnalyticsEventTracker: AnalyticsEventTracking {
 
-    static let shared = AnalyticsEventTracker()
-
-    private init() {
-        
-    }
+    init() {}
     
     func trackEvent(_ event: AnalyticsEvent) {
         // Call analytics 3rd party framework or your own implementation to track an event

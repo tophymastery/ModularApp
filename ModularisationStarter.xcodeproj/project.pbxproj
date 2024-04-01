@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		011959B12BBAED2400B7E8C3 /* AnalyticInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 011959B02BBAED2400B7E8C3 /* AnalyticInterface */; };
 		011959B32BBAED2C00B7E8C3 /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 011959B22BBAED2C00B7E8C3 /* DependencyContainer */; };
+		011959B52BBAEE2100B7E8C3 /* AppDependencyConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011959B42BBAEE2100B7E8C3 /* AppDependencyConfigure.swift */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		0102F9AB2BB9A3F200A57BAD /* DependencyContainer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DependencyContainer; sourceTree = "<group>"; };
 		011959AE2BBAECF600B7E8C3 /* AnalyticInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticInterface; sourceTree = "<group>"; };
+		011959B42BBAEE2100B7E8C3 /* AppDependencyConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyConfigure.swift; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				FBA9D0672B7B936E00FDF616 /* Assets.xcassets */,
 				FBA9D0692B7B936E00FDF616 /* LaunchScreen.storyboard */,
 				FBA9D06C2B7B936E00FDF616 /* Info.plist */,
+				011959B42BBAEE2100B7E8C3 /* AppDependencyConfigure.swift */,
 			);
 			path = ModularisationStarter;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				FBA9D09E2B7CD25300FDF616 /* String+localised.swift in Sources */,
 				FBA9D08A2B7BD00A00FDF616 /* ArtistDetailsView.swift in Sources */,
 				FBA9D0902B7BD1F800FDF616 /* ArtistService.swift in Sources */,
+				011959B52BBAEE2100B7E8C3 /* AppDependencyConfigure.swift in Sources */,
 				FBA9D07C2B7B95E000FDF616 /* HomeView.swift in Sources */,
 				FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */,
 				FBA9D0802B7BB5DA00FDF616 /* HomeService.swift in Sources */,
