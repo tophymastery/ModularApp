@@ -8,6 +8,7 @@
 import SwiftUI
 import AnalyticInterface
 import DependencyContainer
+import CommonModels
 
 final class ArtistDetailsCoordinator {
 

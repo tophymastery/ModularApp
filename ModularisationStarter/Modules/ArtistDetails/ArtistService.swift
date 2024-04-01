@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CommonModels
 
 protocol ArtistServing {
     func fetchArtist(withIdentifier id: String) async -> Artist

@@ -7,18 +7,7 @@
 
 import SwiftUI
 import AnalyticInterface
-
-struct Song: Codable {
-    let id: String
-    let name: String
-    let artistName: String
-    let artistIdentifier: String
-    let lyrics: String
-}
-
-extension Song: Hashable {
-    
-}
+import CommonModels
 
 struct Artist: Codable {
     let name: String

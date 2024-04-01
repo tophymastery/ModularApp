@@ -7,6 +7,7 @@
 
 import XCTest
 import AnalyticInterface
+import CommonModels
 @testable import ModularisationStarter
 
 final class SongDetailsViewModelTests: XCTestCase {

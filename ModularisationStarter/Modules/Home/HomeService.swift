@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CommonModels
 
 protocol HomeServing {
     func fetchSongs() async -> [Song]
