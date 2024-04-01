@@ -5,6 +5,7 @@
 //  Created by Emre Havan on 13.02.24.
 //
 
+import ArtistDetailInterface
 import SwiftUI
 import AnalyticInterface
 import DependencyContainer
@@ -33,8 +34,11 @@ final class SongDetailsCoordinator {
     }
 
     private func pushArtistDetail(withIdentifier id: String) {
-        let coordinator = ArtistDetailsCoordinator(navigationController: navigationController)
-        let view = coordinator.makeViewController(artistIdentifier: id)
+        let gateway = DC.shared.resolve(type: .closureBased, for: ArtistDetailInterface.self)
+        let view = gateway.makeArtistDetailModule(
+            navigationController: navigationController,
+            artistIdentifier: id
+        )
         navigationController?.pushViewController(view, animated: true)
     }
 }

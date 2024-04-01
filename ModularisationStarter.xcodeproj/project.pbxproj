@@ -13,6 +13,8 @@
 		011959B82BBAF9A600B7E8C3 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 011959B72BBAF9A600B7E8C3 /* Analytics */; };
 		011959BB2BBAFCC000B7E8C3 /* CommonModels in Frameworks */ = {isa = PBXBuildFile; productRef = 011959BA2BBAFCC000B7E8C3 /* CommonModels */; };
 		011959BE2BBAFE9D00B7E8C3 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 011959BD2BBAFE9D00B7E8C3 /* Utilities */; };
+		0156FC442BBB0B9F00E568FE /* ArtistDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 0156FC432BBB0B9F00E568FE /* ArtistDetail */; };
+		0156FC462BBB0BE500E568FE /* ArtistDetailInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 0156FC452BBB0BE500E568FE /* ArtistDetailInterface */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		011959B62BBAF97900B7E8C3 /* Analytics */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Analytics; sourceTree = "<group>"; };
 		011959B92BBAFCB600B7E8C3 /* CommonModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonModels; sourceTree = "<group>"; };
 		011959BC2BBAFE9400B7E8C3 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utilities; sourceTree = "<group>"; };
+		0156FC412BBB0B7300E568FE /* ArtistDetail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ArtistDetail; sourceTree = "<group>"; };
+		0156FC422BBB0B9000E568FE /* ArtistDetailInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ArtistDetailInterface; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,10 +88,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0156FC462BBB0BE500E568FE /* ArtistDetailInterface in Frameworks */,
 				011959B82BBAF9A600B7E8C3 /* Analytics in Frameworks */,
 				011959BB2BBAFCC000B7E8C3 /* CommonModels in Frameworks */,
 				011959B12BBAED2400B7E8C3 /* AnalyticInterface in Frameworks */,
 				011959BE2BBAFE9D00B7E8C3 /* Utilities in Frameworks */,
+				0156FC442BBB0B9F00E568FE /* ArtistDetail in Frameworks */,
 				011959B32BBAED2C00B7E8C3 /* DependencyContainer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +147,8 @@
 		011959C02BBB00B900B7E8C3 /* ArtistDetail */ = {
 			isa = PBXGroup;
 			children = (
+				0156FC422BBB0B9000E568FE /* ArtistDetailInterface */,
+				0156FC412BBB0B7300E568FE /* ArtistDetail */,
 			);
 			path = ArtistDetail;
 			sourceTree = "<group>";
@@ -312,6 +320,8 @@
 				011959B72BBAF9A600B7E8C3 /* Analytics */,
 				011959BA2BBAFCC000B7E8C3 /* CommonModels */,
 				011959BD2BBAFE9D00B7E8C3 /* Utilities */,
+				0156FC432BBB0B9F00E568FE /* ArtistDetail */,
+				0156FC452BBB0BE500E568FE /* ArtistDetailInterface */,
 			);
 			productName = ModularisationStarter;
 			productReference = FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */;
@@ -719,6 +729,14 @@
 		011959BD2BBAFE9D00B7E8C3 /* Utilities */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Utilities;
+		};
+		0156FC432BBB0B9F00E568FE /* ArtistDetail */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArtistDetail;
+		};
+		0156FC452BBB0BE500E568FE /* ArtistDetailInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArtistDetailInterface;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
