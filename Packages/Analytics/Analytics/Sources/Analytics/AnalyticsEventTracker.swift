@@ -8,11 +8,11 @@
 import Foundation
 import AnalyticInterface
 
-final class AnalyticsEventTracker: AnalyticsEventTracking {
+public final class AnalyticsEventTracker: AnalyticsEventTracking {
 
-    init() {}
+    public init() {}
     
-    func trackEvent(_ event: AnalyticsEvent) {
+    public func trackEvent(_ event: AnalyticsEvent) {
         // Call analytics 3rd party framework or your own implementation to track an event
     }
 }

@@ -10,6 +10,7 @@
 		011959B12BBAED2400B7E8C3 /* AnalyticInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 011959B02BBAED2400B7E8C3 /* AnalyticInterface */; };
 		011959B32BBAED2C00B7E8C3 /* DependencyContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 011959B22BBAED2C00B7E8C3 /* DependencyContainer */; };
 		011959B52BBAEE2100B7E8C3 /* AppDependencyConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011959B42BBAEE2100B7E8C3 /* AppDependencyConfigure.swift */; };
+		011959B82BBAF9A600B7E8C3 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 011959B72BBAF9A600B7E8C3 /* Analytics */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -27,7 +28,6 @@
 		FBA9D08C2B7BD01A00FDF616 /* ArtistDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D08B2B7BD01A00FDF616 /* ArtistDetailsCoordinator.swift */; };
 		FBA9D08E2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D08D2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift */; };
 		FBA9D0902B7BD1F800FDF616 /* ArtistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D08F2B7BD1F800FDF616 /* ArtistService.swift */; };
-		FBA9D0932B7CC47100FDF616 /* AnalyticsEventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0922B7CC47100FDF616 /* AnalyticsEventTracker.swift */; };
 		FBA9D0982B7CD20A00FDF616 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D09A2B7CD20A00FDF616 /* Localizable.strings */; };
 		FBA9D09E2B7CD25300FDF616 /* String+localised.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D09D2B7CD25300FDF616 /* String+localised.swift */; };
 		FBA9D0AF2B7CD3D200FDF616 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0AE2B7CD3D200FDF616 /* HomeViewModelTests.swift */; };
@@ -52,6 +52,7 @@
 		0102F9AB2BB9A3F200A57BAD /* DependencyContainer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DependencyContainer; sourceTree = "<group>"; };
 		011959AE2BBAECF600B7E8C3 /* AnalyticInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticInterface; sourceTree = "<group>"; };
 		011959B42BBAEE2100B7E8C3 /* AppDependencyConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyConfigure.swift; sourceTree = "<group>"; };
+		011959B62BBAF97900B7E8C3 /* Analytics */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Analytics; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		FBA9D08B2B7BD01A00FDF616 /* ArtistDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailsCoordinator.swift; sourceTree = "<group>"; };
 		FBA9D08D2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailsViewModel.swift; sourceTree = "<group>"; };
 		FBA9D08F2B7BD1F800FDF616 /* ArtistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistService.swift; sourceTree = "<group>"; };
-		FBA9D0922B7CC47100FDF616 /* AnalyticsEventTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTracker.swift; sourceTree = "<group>"; };
 		FBA9D0992B7CD20A00FDF616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FBA9D09B2B7CD21300FDF616 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FBA9D09D2B7CD25300FDF616 /* String+localised.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localised.swift"; sourceTree = "<group>"; };
@@ -90,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011959B82BBAF9A600B7E8C3 /* Analytics in Frameworks */,
 				011959B12BBAED2400B7E8C3 /* AnalyticInterface in Frameworks */,
 				011959B32BBAED2C00B7E8C3 /* DependencyContainer in Frameworks */,
 			);
@@ -117,6 +118,7 @@
 		011959A62BBAEB8000B7E8C3 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				011959B62BBAF97900B7E8C3 /* Analytics */,
 				011959AE2BBAECF600B7E8C3 /* AnalyticInterface */,
 			);
 			path = Analytics;
@@ -290,7 +292,6 @@
 		FBA9D0BA2B7DFB4100FDF616 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				FBA9D0922B7CC47100FDF616 /* AnalyticsEventTracker.swift */,
 				FBA9D0BB2B7DFB5000FDF616 /* AnalyticsEventName.swift */,
 			);
 			path = Analytics;
@@ -315,6 +316,7 @@
 			packageProductDependencies = (
 				011959B02BBAED2400B7E8C3 /* AnalyticInterface */,
 				011959B22BBAED2C00B7E8C3 /* DependencyContainer */,
+				011959B72BBAF9A600B7E8C3 /* Analytics */,
 			);
 			productName = ModularisationStarter;
 			productReference = FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */;
@@ -406,7 +408,6 @@
 				FBA9D0752B7B94D400FDF616 /* RootCoordinator.swift in Sources */,
 				FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */,
 				FBA9D07E2B7BB1BC00FDF616 /* HomeViewModel.swift in Sources */,
-				FBA9D0932B7CC47100FDF616 /* AnalyticsEventTracker.swift in Sources */,
 				FBA9D08E2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift in Sources */,
 				FBA9D07A2B7B95D400FDF616 /* HomeCoordinator.swift in Sources */,
 				FBA9D0832B7BCA4800FDF616 /* SongDetailsView.swift in Sources */,
@@ -716,6 +717,10 @@
 		011959B22BBAED2C00B7E8C3 /* DependencyContainer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DependencyContainer;
+		};
+		011959B72BBAF9A600B7E8C3 /* Analytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Analytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

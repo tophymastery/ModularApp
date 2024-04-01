@@ -6,6 +6,7 @@
 //
 
 import AnalyticInterface
+import Analytics
 import DependencyContainer
 import Foundation
 
