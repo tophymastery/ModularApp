@@ -9,12 +9,6 @@ import SwiftUI
 import AnalyticInterface
 import CommonModels
 
-struct Artist: Codable {
-    let name: String
-    let birthDate: Date
-    let songs: [Song]
-}
-
 final class HomeViewModel: ObservableObject {
 
     @Published var songs = [Song]()

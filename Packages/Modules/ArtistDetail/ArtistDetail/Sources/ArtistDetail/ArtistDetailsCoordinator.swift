@@ -34,8 +34,8 @@ final class ArtistDetailsCoordinator {
     }
 
     func pushSongDetail(_ song: Song) {
-        let coordinator = SongDetailsCoordinator(navigationController: navigationController)
-        let songDetailView = coordinator.makeViewController(with: song)
-        navigationController?.pushViewController(songDetailView, animated: true)
+//        let coordinator = SongDetailsCoordinator(navigationController: navigationController)
+//        let songDetailView = coordinator.makeViewController(with: song)
+//        navigationController?.pushViewController(songDetailView, animated: true)
     }
 }
