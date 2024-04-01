@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AnalyticInterface
 
 final class ArtistDetailsViewModel: ObservableObject {
 

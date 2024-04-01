@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AnalyticInterface
 
 struct SongDetailsView: View {
 

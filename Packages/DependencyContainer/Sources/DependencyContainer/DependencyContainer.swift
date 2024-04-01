@@ -3,11 +3,11 @@
 
 import Foundation
 
-public typealias Closure = () -> Void
+public typealias Closure = () -> Any
 public typealias DC = DependencyContainer
 
 public final class DependencyContainer {
-    public let shared = DependencyContainer()
+    public static let shared = DependencyContainer()
 
     private var singleInstanceDependencies: [ObjectIdentifier: AnyObject] = [:]
     private var closureBasesDependencies: [ObjectIdentifier: () -> Any] = [:]
@@ -59,7 +59,7 @@ public final class DependencyContainer {
             case .closureBased:
                 guard
                     let closure = closureBasesDependencies[objectIdentifier],
-                    let closureBasesDependencies = closure as? Value else {
+                    let closureBasesDependencies = closure() as? Value else {
                     fatalError("Could not retrieve closure based dependency for type: \(interface)")
                 }
 
