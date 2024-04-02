@@ -15,8 +15,6 @@
 		011959BE2BBAFE9D00B7E8C3 /* Utilities in Frameworks */ = {isa = PBXBuildFile; productRef = 011959BD2BBAFE9D00B7E8C3 /* Utilities */; };
 		0156FC442BBB0B9F00E568FE /* ArtistDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 0156FC432BBB0B9F00E568FE /* ArtistDetail */; };
 		0156FC462BBB0BE500E568FE /* ArtistDetailInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 0156FC452BBB0BE500E568FE /* ArtistDetailInterface */; };
-		0156FC492BBC37F500E568FE /* TemporaryMainPackageInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 0156FC482BBC37F500E568FE /* TemporaryMainPackageInterface */; };
-		0156FC4C2BBC381700E568FE /* TemporaryMainTargetGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156FC4B2BBC381700E568FE /* TemporaryMainTargetGateway.swift */; };
 		0156FC502BBC3BC900E568FE /* SongDetailsInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 0156FC4F2BBC3BC900E568FE /* SongDetailsInterface */; };
 		0156FC532BBC3FB600E568FE /* SongDetails in Frameworks */ = {isa = PBXBuildFile; productRef = 0156FC522BBC3FB600E568FE /* SongDetails */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
@@ -57,8 +55,6 @@
 		011959BC2BBAFE9400B7E8C3 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utilities; sourceTree = "<group>"; };
 		0156FC412BBB0B7300E568FE /* ArtistDetail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ArtistDetail; sourceTree = "<group>"; };
 		0156FC422BBB0B9000E568FE /* ArtistDetailInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ArtistDetailInterface; sourceTree = "<group>"; };
-		0156FC472BBC37BD00E568FE /* TemporaryMainPackageInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TemporaryMainPackageInterface; sourceTree = "<group>"; };
-		0156FC4B2BBC381700E568FE /* TemporaryMainTargetGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryMainTargetGateway.swift; sourceTree = "<group>"; };
 		0156FC4E2BBC3BC100E568FE /* SongDetailsInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SongDetailsInterface; sourceTree = "<group>"; };
 		0156FC512BBC3FAD00E568FE /* SongDetails */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SongDetails; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +88,6 @@
 			files = (
 				0156FC462BBB0BE500E568FE /* ArtistDetailInterface in Frameworks */,
 				011959B82BBAF9A600B7E8C3 /* Analytics in Frameworks */,
-				0156FC492BBC37F500E568FE /* TemporaryMainPackageInterface in Frameworks */,
 				011959BB2BBAFCC000B7E8C3 /* CommonModels in Frameworks */,
 				011959B12BBAED2400B7E8C3 /* AnalyticInterface in Frameworks */,
 				011959BE2BBAFE9D00B7E8C3 /* Utilities in Frameworks */,
@@ -116,7 +111,6 @@
 		0102F9AA2BB9A16B00A57BAD /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				0156FC472BBC37BD00E568FE /* TemporaryMainPackageInterface */,
 				011959BF2BBB00A100B7E8C3 /* Modules */,
 				011959BC2BBAFE9400B7E8C3 /* Utilities */,
 				011959B92BBAFCB600B7E8C3 /* CommonModels */,
@@ -160,14 +154,6 @@
 			path = ArtistDetail;
 			sourceTree = "<group>";
 		};
-		0156FC4A2BBC380400E568FE /* TemporaryMainTargetGateway */ = {
-			isa = PBXGroup;
-			children = (
-				0156FC4B2BBC381700E568FE /* TemporaryMainTargetGateway.swift */,
-			);
-			path = TemporaryMainTargetGateway;
-			sourceTree = "<group>";
-		};
 		0156FC4D2BBC3A6300E568FE /* SongDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +187,6 @@
 		FBA9D05D2B7B936A00FDF616 /* ModularisationStarter */ = {
 			isa = PBXGroup;
 			children = (
-				0156FC4A2BBC380400E568FE /* TemporaryMainTargetGateway */,
 				FBA9D0952B7CD1D400FDF616 /* Localisation */,
 				FBA9D0912B7CC45C00FDF616 /* Common */,
 				FBA9D0722B7B94BC00FDF616 /* Modules */,
@@ -336,7 +321,6 @@
 				011959BD2BBAFE9D00B7E8C3 /* Utilities */,
 				0156FC432BBB0B9F00E568FE /* ArtistDetail */,
 				0156FC452BBB0BE500E568FE /* ArtistDetailInterface */,
-				0156FC482BBC37F500E568FE /* TemporaryMainPackageInterface */,
 				0156FC4F2BBC3BC900E568FE /* SongDetailsInterface */,
 				0156FC522BBC3FB600E568FE /* SongDetails */,
 			);
@@ -429,7 +413,6 @@
 				FBA9D0752B7B94D400FDF616 /* RootCoordinator.swift in Sources */,
 				FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */,
 				FBA9D07E2B7BB1BC00FDF616 /* HomeViewModel.swift in Sources */,
-				0156FC4C2BBC381700E568FE /* TemporaryMainTargetGateway.swift in Sources */,
 				FBA9D07A2B7B95D400FDF616 /* HomeCoordinator.swift in Sources */,
 				011959B52BBAEE2100B7E8C3 /* AppDependencyConfigure.swift in Sources */,
 				FBA9D07C2B7B95E000FDF616 /* HomeView.swift in Sources */,
@@ -752,10 +735,6 @@
 		0156FC452BBB0BE500E568FE /* ArtistDetailInterface */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ArtistDetailInterface;
-		};
-		0156FC482BBC37F500E568FE /* TemporaryMainPackageInterface */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TemporaryMainPackageInterface;
 		};
 		0156FC4F2BBC3BC900E568FE /* SongDetailsInterface */ = {
 			isa = XCSwiftPackageProductDependency;
