@@ -8,6 +8,7 @@ private let commonModels = "CommonModels"
 private let dependencyContainer = "DependencyContainer"
 private let utilities = "Utilities"
 private let artistDetailInterface = "ArtistDetailInterface"
+private let temporaryMainPackageInterface = "TemporaryMainPackageInterface"
 
 let package = Package(
     name: "ArtistDetail",
@@ -24,6 +25,7 @@ let package = Package(
         .package(name: dependencyContainer, path: "../../../\(dependencyContainer)"),
         .package(name: utilities, path: "../../../\(utilities)"),
         .package(name: artistDetailInterface, path: "../\(artistDetailInterface)"),
+        .package(name: temporaryMainPackageInterface, path: "../../../\(temporaryMainPackageInterface)"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -36,6 +38,7 @@ let package = Package(
                 .product(name: dependencyContainer, package: dependencyContainer),
                 .product(name: utilities, package: utilities),
                 .product(name: artistDetailInterface, package: artistDetailInterface),
+                .product(name: temporaryMainPackageInterface, package: temporaryMainPackageInterface),
             ]
         ),
     ]
