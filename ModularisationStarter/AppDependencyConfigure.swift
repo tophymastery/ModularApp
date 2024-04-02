@@ -12,6 +12,8 @@ import Analytics
 import DependencyContainer
 import Foundation
 import TemporaryMainPackageInterface
+import SongDetailsInterface
+import SongDetails
 
 enum AppDependencyConfigure {
     static func configure() {
@@ -27,5 +29,10 @@ enum AppDependencyConfigure {
             TemporaryMainTargetGateway()
         }
         DC.shared.register(type: .closureBased(temporaryGateway), for: TemporaryMainPackageInterface.self)
+
+        let songDetailsClosure: () -> SongDetailsInterface = {
+            SongDetailsGateway()
+        }
+        DC.shared.register(type: .closureBased(songDetailsClosure), for: SongDetailsInterface.self)
     }
 }
