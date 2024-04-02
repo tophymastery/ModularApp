@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AnalyticInterface
+import Utilities
 
 struct SongDetailsView: View {
 
